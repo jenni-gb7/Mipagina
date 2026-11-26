@@ -1,0 +1,558 @@
+/* NAVBAR */
+.navbar {
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee5dc;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  color: #273a57;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #b79a70;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar nav a {
+  color: #6c625a;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #b3986d;
+}
+
+.nav-boton {
+  text-decoration: none;
+  color: #fff;
+  background: #263a57;
+  padding: 12px 20px;
+  font-size: 12px;
+}
+
+/* PORTADA */
+.hero {
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(18, 29, 48, 0.96),
+      rgba(30, 43, 64, 0.84),
+      rgba(30, 43, 64, 0.35)
+    ),
+    radial-gradient(circle at 80% 30%, #d9c8a8, #23344f 65%);
+}
+
+.hero-fondo {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 85% 40%,
+      rgba(223, 195, 153, 0.28),
+      transparent 35%
+    );
+}
+
+.hero-contenido {
+  max-width: 700px;
+  padding: 80px 8%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.etiqueta {
+  color: #d9bd8d;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(45px, 7vw, 85px);
+  line-height: 1.04;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: #d6bd94;
+}
+
+.hero-descripcion {
+  max-width: 450px;
+  color: #d6d9df;
+  line-height: 1.9;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.hero-botones {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.boton-principal,
+.boton-secundario {
+  padding: 14px 23px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.boton-principal {
+  background: #c6a879;
+  color: #18243a;
+}
+
+.boton-principal:hover {
+  background: #dfc99f;
+}
+
+.boton-secundario {
+  color: white;
+  border: 1px solid #b8b8bb;
+}
+
+.boton-secundario:hover {
+  background: white;
+  color: #263a57;
+}
+
+.hero-frase {
+  margin-top: 60px;
+  max-width: 470px;
+  color: #d4c7b5;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  border-left: 2px solid #b99c6c;
+  padding-left: 15px;
+  line-height: 1.7;
+}
+
+.hero-frase span {
+  font-size: 30px;
+  color: #c5a878;
+}
+
+.hero-decoracion {
+  position: absolute;
+  right: 12%;
+  top: 12%;
+  font-size: clamp(180px, 30vw, 400px);
+  color: rgba(255, 255, 255, 0.045);
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+
+/* SECCIONES */
+.seccion {
+  padding: 100px 8%;
+}
+
+.subtitulo {
+  color: #b29567;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+/* HISTORIA */
+.historia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  background: #fff;
+}
+
+.historia-imagen {
+  min-height: 420px;
+  background:
+    radial-gradient(circle at center, #d9c9ae, transparent 65%),
+    linear-gradient(135deg, #f1e9dd, #d7d0c7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.marco {
+  width: 80%;
+  min-height: 340px;
+  border: 1px solid #bca47d;
+  outline: 1px solid #bca47d;
+  outline-offset: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #52627a;
+  font-family: Georgia, serif;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.marco span {
+  font-size: 100px;
+}
+
+.marco p {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.marco small {
+  letter-spacing: 3px;
+}
+
+.historia-texto h2 {
+  font-family: Georgia, serif;
+  font-size: 43px;
+  font-weight: 400;
+  color: #293a52;
+  line-height: 1.2;
+}
+
+.historia-texto h2 span {
+  color: #b49970;
+}
+
+.historia-texto > p:not(.subtitulo) {
+  color: #77716b;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+.texto-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #8e7651;
+  text-decoration: none;
+  border-bottom: 1px solid #c9b18b;
+  padding-bottom: 8px;
+}
+
+/* PERSONAJES */
+.personajes {
+  background: #f7f5f2;
+}
+
+.encabezado-seccion {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.encabezado-seccion h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  color: #293a52;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.encabezado-seccion > p:last-child {
+  color: #827a72;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.personajes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.personaje-card {
+  background: white;
+  border: 1px solid #e9e2d9;
+  transition: transform 0.3s;
+}
+
+.personaje-card:hover {
+  transform: translateY(-7px);
+}
+
+.personaje-imagen {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-size: 100px;
+}
+
+.navier .personaje-imagen {
+  background: linear-gradient(135deg, #dce5f0, #a7b8cf);
+  color: #526b91;
+}
+
+.heinrey .personaje-imagen {
+  background: linear-gradient(135deg, #dce9dc, #a3bea8);
+  color: #53765c;
+}
+
+.sovieshu .personaje-imagen {
+  background: linear-gradient(135deg, #e9dce0, #c4a2ad);
+  color: #8a5869;
+}
+
+.rashta .personaje-imagen {
+  background: linear-gradient(135deg, #f4e5e0, #d9b9a9);
+  color: #a47766;
+}
+
+.personaje-info {
+  padding: 25px 20px;
+}
+
+.personaje-rol {
+  color: #b1956c;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.personaje-info h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #293a52;
+}
+
+.personaje-info > p:last-child {
+  font-size: 13px;
+  color: #7d7771;
+  line-height: 1.7;
+}
+
+/* UNIVERSO */
+.universo {
+  background: #fff;
+}
+
+.universo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.universo-card {
+  padding: 40px 30px;
+  min-height: 280px;
+  border: 1px solid #e8e1d8;
+  transition: 0.3s;
+}
+
+.universo-card:hover {
+  box-shadow: 0 15px 30px rgba(40, 40, 40, 0.07);
+  transform: translateY(-5px);
+}
+
+.novela {
+  background: #f7f4ee;
+}
+
+.webtoon {
+  background: #f0f3f7;
+}
+
+.drama {
+  background: #f6f0f2;
+}
+
+.universo-icono {
+  font-size: 35px;
+}
+
+.universo-card > p {
+  color: #a38a66;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin-top: 25px;
+}
+
+.universo-card h3 {
+  color: #293a52;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 29px;
+}
+
+.universo-card > span:last-child {
+  color: #77716b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* CITA */
+.cita {
+  text-align: center;
+  padding: 80px 20px;
+  background: #293a52;
+  color: #fff;
+}
+
+.cita > span {
+  color: #c6a879;
+  font-size: 35px;
+}
+
+.cita h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 34px;
+}
+
+.cita p {
+  color: #c6a879;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 30px;
+}
+
+/* FOOTER */
+footer {
+  background: #f8f6f3;
+  text-align: center;
+  padding: 35px 20px;
+  color: #827a72;
+  font-size: 12px;
+}
+
+footer > p:first-child {
+  color: #293a52;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+.footer-final {
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+  .personajes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .historia {
+    gap: 35px;
+  }
+
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .navbar nav {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .navbar nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-boton {
+    display: none;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-contenido {
+    padding: 70px 7%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-frase {
+    margin-top: 40px;
+  }
+
+  .seccion {
+    padding: 65px 6%;
+  }
+
+  .historia {
+    grid-template-columns: 1fr;
+  }
+
+  .historia-imagen {
+    min-height: 350px;
+  }
+
+  .historia-texto h2 {
+    font-size: 35px;
+  }
+
+  .personajes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personaje-imagen {
+    height: 280px;
+  }
+
+  .universo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .encabezado-seccion h2 {
+    font-size: 34px;
+  }
+
+  .cita h2 {
+    font-size: 26px;
+  }
+}
+.personaje-imagen {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.personaje-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
